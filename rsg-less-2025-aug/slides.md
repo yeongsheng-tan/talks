@@ -177,13 +177,13 @@ layout: full
   </div>
 
   <div class="flex items-center gap-3">
-    <img src="https://www.jetify.com/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F144604%2F1733460224-devbox.png&w=3840&q=75" class="h-8" alt="Jetfy Devbox">
+    <img src="https://www.jetify.com/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F144604%2F1733460224-devbox.png&w=3840&q=75" class="h-8" alt="Jetify Devbox">
     <a
       href="https://jetify.com/"
       target="_blank"
       class="text-xs underline"
     >
-      <div>Jetfy Devbox</div>
+      <div>Jetify Devbox</div>
     </a>
   </div>
 
