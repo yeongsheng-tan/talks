@@ -148,10 +148,38 @@ layout: center
 
 ---
 transition: fade-out
-layout: center
+layout: full
 ---
-  ### `{ DEMO }`
+### `{ DEMO }`
 
+```json {monaco}
+{
+  "packages": [
+    "postgresql@17.5",
+    "beam27Packages.elixir@1.18.4",
+    "nodejs@24.3.0"
+  ],
+  "shell": {
+    "init_hook": [
+      "echo 'Welcome to devbox for lunchbox_api!' > /dev/null",
+      "corepack prepare pnpm@10.12.4 --activate",
+      "corepack use pnpm@10.12.4",
+      "cd assets && pnpm --frozen-lockfile recursive install"
+    ],
+    "scripts": {
+      "test": [
+        "BASIC_AUTH_USERNAME=specialUserName BASIC_AUTH_PASSWORD=superSecretPassword mix test"
+      ],
+      "setup-db": [
+        "devbox services up -b",
+        "psql -U postgres -c \"CREATE USER postgres;\" || true",
+        "psql -U postgres -c \"CREATE DATABASE lunchbox_api_dev OWNER postgres;\" || true",
+        "psql -U postgres -c \"CREATE DATABASE lunchbox_api_test OWNER postgres;\" || true",
+      ]
+    }
+  }
+}
+```
 ---
 
 ## The Real Cost of Broken Local Environments
