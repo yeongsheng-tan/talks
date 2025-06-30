@@ -1,9 +1,11 @@
 ---
 theme: seriph
 layout: cover
+favicon: /favicon.svg
 # random image from a curated Unsplash collection by Anthony
 # like them? see https://unsplash.dev/collections/94734566/slidev
-background: https://cover.sli.dev
+# background: https://cover.sli.dev
+background: https://images.unsplash.com/photo-1507525428034-b723cf961d3e
 highlighter: shiki
 # some information about your slides (markdown enabled)
 title: Master Your Local Development Environment for AI adoption
@@ -126,6 +128,17 @@ transition: fade-out
 layout: center
 ---
   ### `{ DEMO }`
+  <!-- Code demo using lunchbox_api -->
+  <div class="flex items-center gap-3">
+    <img src="https://logos-world.net/wp-content/uploads/2020/11/GitHub-Logo-700x394.png" class="h-8" alt="GitHub lunchbox_api Code">
+    <a
+      href="https://github.com/yeongsheng-tan/lunchbox_api"
+      target="_blank"
+      class="text-xs underline"
+    >
+      <div>lunchbox_api</div>
+    </a>
+  </div>
 
 ---
 transition: fade-out
@@ -150,7 +163,29 @@ layout: center
 transition: fade-out
 layout: full
 ---
-### `{ DEMO }`
+  ### `{ DEMO }`
+  <!-- Nix Flakes with Jetfy Devbox & direnv-->
+  <div class="flex items-center gap-3">
+    <img src="https://cdn.icon-icons.com/icons2/2699/PNG/512/nixos_logo_icon_169913.png" class="h-8" alt="Nix">
+    <a
+      href="https://nixos.org/"
+      target="_blank"
+      class="text-xs underline"
+    >
+      <div>Nix Package Manager</div>
+    </a>
+  </div>
+
+  <div class="flex items-center gap-3">
+    <img src="https://www.jetify.com/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F144604%2F1733460224-devbox.png&w=3840&q=75" class="h-8" alt="Jetfy Devbox">
+    <a
+      href="https://jetify.com/"
+      target="_blank"
+      class="text-xs underline"
+    >
+      <div>Jetfy Devbox</div>
+    </a>
+  </div>
 
 ```json {monaco}
 {
