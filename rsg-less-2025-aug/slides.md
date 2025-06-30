@@ -125,6 +125,12 @@ layout: center
 transition: fade-out
 layout: center
 ---
+  ### `{ DEMO }`
+
+---
+transition: fade-out
+layout: center
+---
   
   ### Is it even possible to take complete control of your local environment?
   - databases, messaging, and dependencies?
@@ -141,6 +147,12 @@ layout: center
 * **Create an improvement roadmap** to start your teams’ journey toward better integration practices and effective AI tool adoption.
 
 ---
+transition: fade-out
+layout: center
+---
+  ### `{ DEMO }`
+
+---
 
 ## The Real Cost of Broken Local Environments
 
@@ -148,11 +160,6 @@ layout: center
 * Hours lost to “works on my machine” issues.
 * AI tools become unreliable without local verification.
 * Blocked productivity: both human and AI.
-
----
-
-## Why Local Verification Matters for AI
-
 * AI-generated code is only as good as your ability to test it locally.
 * Without a clean, reproducible environment, you can’t trust AI suggestions.
 * **Example:** Cursor and similar tools need fast feedback loops.
