@@ -1,0 +1,15 @@
+{
+  "$schema":  "https://raw.githubusercontent.com/jetify-com/devbox/0.15.0/.schema/devbox.schema.json",
+  "packages": ["nodejs@24.4.1"],
+  "shell": {
+    "init_hook": [
+      "echo 'Welcome to devbox for rsg-less-2025-aug!' > /dev/null",
+      ". ./set-env.sh"
+    ],
+    "scripts": {
+      "slide-show": [
+        "pnpm run dev"
+      ]
+    }
+  }
+}

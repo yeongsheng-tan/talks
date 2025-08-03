@@ -13,8 +13,6 @@ info: |
   ## Master Your Local Development Environment for AI adoption
 
   Unlock the full potential of AI integration in your development workflow by establishing a robust local environment. Achieve a tight, full-cycle feedback loop, with rapid iteration.
-
-  [Anthony Fu](https://antfu.me/) at [VueDay 2021]
 # apply unocss classes to the current slide
 class: text-center
 # https://sli.dev/features/drawing
@@ -127,18 +125,26 @@ layout: center
 transition: fade-out
 layout: center
 ---
-  ### `{ DEMO }`
-  <!-- Code demo using lunchbox_api -->
-  <div class="flex items-center gap-3">
-    <img src="https://logos-world.net/wp-content/uploads/2020/11/GitHub-Logo-700x394.png" class="h-8" alt="GitHub lunchbox_api Code">
-    <a
-      href="https://github.com/yeongsheng-tan/lunchbox_api"
-      target="_blank"
-      class="text-xs underline"
-    >
-      <div>lunchbox_api</div>
-    </a>
+
+<div style="background: #f5f5f5; height: 100vh; width: 100vw; display: flex; align-items: center; justify-content: center; text-align: center; position: absolute; top: 0; left: 0; z-index: 1; margin: 0; padding: 0;">
+
+  <div style="color: #2d3748; display: flex; flex-direction: column; align-items: center; justify-content: center; width: 100%; height: 100%;">
+    <h3 style="color: #2d3748; font-size: 2rem; margin-bottom: 2rem; text-align: center;">{ DEMO }</h3>
+    <!-- Code demo using lunchbox_api -->
+    <div class="flex items-center gap-3" style="color: #2d3748; justify-content: center;">
+      <img src="https://logos-world.net/wp-content/uploads/2020/11/GitHub-Logo-700x394.png" class="h-8" alt="GitHub lunchbox_api Code">
+      <a
+        href="https://github.com/yeongsheng-tan/lunchbox_api"
+        target="_blank"
+        class="text-xs underline"
+        style="color: #2c3e50;"
+      >
+        <div style="color: #2d3748;">lunchbox_api</div>
+      </a>
+    </div>
   </div>
+
+</div>
 
 ---
 transition: fade-out
@@ -197,8 +203,8 @@ layout: full
   "shell": {
     "init_hook": [
       "echo 'Welcome to devbox for lunchbox_api!' > /dev/null",
-      "corepack prepare pnpm@10.12.4 --activate",
-      "corepack use pnpm@10.12.4",
+      "corepack prepare pnpm@10.13.1 --activate",
+      "corepack use pnpm@10.13.1",
       "cd assets && pnpm --frozen-lockfile recursive install"
     ],
     "scripts": {
