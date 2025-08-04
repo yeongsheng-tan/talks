@@ -92,15 +92,6 @@ mdc: true
   </div>
 </div>
 
-
----
-transition: fade-out
-layout: center
-class: text-center
----
-  ### Unlock the full potential of AI integration in your development workflow.
-  ### Achieve a tight, full-cycle feedback loop, with rapid iteration.
-
 ---
 transition: fade-out
 layout: center
@@ -112,14 +103,42 @@ class: text-center
 ---
 transition: fade-out
 layout: center
+class: text-left
 ---
-  ### In multi-team setup, simple problems become massive obstacles
-  - Delayed integration
-  - Hours lost to environment issues
-  - Developers, new and existing piling code, yet unable to verify changes thoroughly in local enironment
-  - LeSS exposes these problems like dropping water levels to reveal rocks in a lake
-  - Prevent teams from using AI tools like Cursor effectively.
-  - Teams struggle to quickly validate AI-generated code, limiting its potential impact.
+
+<div style="
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://less.works/img/queueing_theory/queueing-10.jpg');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.3;
+  z-index: -1;
+"></div>
+
+<div class="flex flex-col justify-center h-full relative z-10">
+
+### In multi-team setup, simple problems become massive obstacles
+
+- Delayed integration
+- Hours lost to environment issues
+- Developers, new and existing piling code, yet unable to verify changes thoroughly in local enironment
+- LeSS exposes these problems like dropping water levels to reveal rocks in a lake
+- Prevent teams from using AI tools like Cursor effectively.
+- Teams struggle to quickly validate AI-generated code, limiting its potential impact.
+
+</div>
+
+---
+transition: fade-out
+layout: center
+class: text-center
+---
+  ### Unlock the full potential of AI integration in your development workflow.
+  ### Achieve a tight, full-cycle feedback loop, with rapid iteration.
 
 ---
 transition: fade-out
@@ -223,7 +242,7 @@ layout: full
 ```
 ---
 
-## The Real Cost of Broken Local Environments
+## Summary
 
 * Integration delays ripple across teams.
 * Hours lost to “works on my machine” issues.
