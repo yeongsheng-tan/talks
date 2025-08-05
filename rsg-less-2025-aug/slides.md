@@ -143,26 +143,50 @@ class: text-center
 ---
 transition: fade-out
 layout: center
+class: text-center
 ---
 
-<div style="background: #f5f5f5; height: 100vh; width: 100vw; display: flex; align-items: center; justify-content: center; text-align: center; position: absolute; top: 0; left: 0; z-index: 1; margin: 0; padding: 0;">
+<div class="flex flex-col justify-center items-center h-full">
 
-  <div style="color: #2d3748; display: flex; flex-direction: column; align-items: center; justify-content: center; width: 100%; height: 100%;">
-    <h3 style="color: #2d3748; font-size: 2rem; margin-bottom: 2rem; text-align: center;">{ DEMO }</h3>
-    <!-- Code demo using lunchbox_api -->
-    <div class="flex items-center gap-3" style="color: #2d3748; justify-content: center;">
-      <img src="https://logos-world.net/wp-content/uploads/2020/11/GitHub-Logo-700x394.png" class="h-8" alt="GitHub lunchbox_api Code">
-      <a
-        href="https://github.com/yeongsheng-tan/lunchbox_api"
-        target="_blank"
-        class="text-xs underline"
-        style="color: #2c3e50;"
-      >
-        <div style="color: #2d3748;">lunchbox_api</div>
-      </a>
-    </div>
+<div class="mb-8">
+
+## Demo Repository
+
+</div>
+
+<div class="flex items-center gap-6 mb-8">
+  <img src="https://logos-world.net/wp-content/uploads/2020/11/GitHub-Logo-700x394.png" class="h-16" alt="GitHub Logo">
+</div>
+
+<div>
+  <a
+    href="https://github.com/yeongsheng-tan/lunchbox_api"
+    target="_blank"
+    class="text-2xl underline hover:text-blue-600 transition-colors"
+  >
+    lunchbox_api
+  </a>
+</div>
+
+</div>
+
+---
+transition: fade-out
+layout: center
+---
+
+<div style="background: #f5f5f5; height: 100vh; width: 100vw; display: flex; flex-direction: column; position: absolute; top: 0; left: 0; z-index: 1; margin: 0; padding: 0;">
+  <!-- Top half with the AI IDE run test failure image -->
+  <div style="height: 50vh; width: 100vw; display: flex; align-items: center; justify-content: center; background: #f5f5f5; overflow: visible;">
+    <!-- Contrast AI IDE failure to run tests-->
+    <img src="/images/ai_ide_failure.png" alt="IDE failure" style="width: auto; height: auto; max-width: 100%; max-height: 100%; object-fit: contain; display: block;">
   </div>
 
+  <!-- Bottom half with the AI IDE run test success image -->
+  <div style="height: 50vh; width: 100vw; display: flex; align-items: center; justify-content: center; background: #f5f5f5; overflow: visible;">
+    <!-- AI IDE success to run tests-->
+    <img src="/images/ai_ide_succeed.png" alt="IDE success" style="width: auto; height: auto; max-width: 100%; max-height: 100%; object-fit: contain; display: block;">
+  </div>
 </div>
 
 ---
@@ -174,21 +198,16 @@ layout: center
   - databases, messaging, and dependencies?
   - repeatable, composable, clean-slate DB migrations?
   - time-travel testing, and bending your software product system to your will for effective testing & verification?
----
-
-## Learning Outcomes
-
-* **Spot the real damage from broken local environments.** It’s not just annoying; it’s expensive and blocks both human and AI productivity.
-* **Take total control of your local setup:** databases, messaging, dependencies, and runtime in order to verify code changes instantly.
-* **Learn advanced testing techniques** including clean-slate resets, time-travel debugging, and the ability to short-circuit any flow for testing.
-* **Actually use AI tools like Cursor productively** because you’ll have the local verification setup to check if the generated code actually works.
-* **Create an improvement roadmap** to start your teams’ journey toward better integration practices and effective AI tool adoption.
 
 ---
 transition: fade-out
 layout: full
 ---
-  ### `{ DEMO }`
+  <div class="flex items-center gap-6 mb-6">
+    <h3>{ DEMO }</h3>
+    <img src="/images/devbox_stack.png" alt="Devbox Stack" class="h-32 w-auto">
+  </div>
+
   <!-- Nix Flakes with Jetfy Devbox & direnv-->
   <div class="flex items-center gap-3">
     <img src="https://cdn.icon-icons.com/icons2/2699/PNG/512/nixos_logo_icon_169913.png" class="h-8" alt="Nix">
@@ -197,14 +216,14 @@ layout: full
       target="_blank"
       class="text-xs underline"
     >
-      <div>Nix Package Manager</div>
+      <div>Nix with NixPkgs</div>
     </a>
   </div>
 
   <div class="flex items-center gap-3">
     <img src="https://www.jetify.com/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F144604%2F1733460224-devbox.png&w=3840&q=75" class="h-8" alt="Jetify Devbox">
     <a
-      href="https://jetify.com/"
+      href="https://www.jetify.com/devbox"
       target="_blank"
       class="text-xs underline"
     >
@@ -212,45 +231,119 @@ layout: full
     </a>
   </div>
 
+<div style="font-size: 0.75rem; line-height: 1.2; max-height: 400px; overflow-y: auto;">
+
 ```json {monaco}
 {
-  "packages": [
-    "postgresql@17.5",
-    "beam27Packages.elixir@1.18.4",
-    "nodejs@24.3.0"
-  ],
+  "packages": ["postgresql@17.5", "beam27Packages.elixir@1.18.4", "nodejs@22.14.0"],
   "shell": {
-    "init_hook": [
-      "echo 'Welcome to devbox for lunchbox_api!' > /dev/null",
-      "corepack prepare pnpm@10.13.1 --activate",
-      "corepack use pnpm@10.13.1",
-      "cd assets && pnpm --frozen-lockfile recursive install"
-    ],
+    "init_hook": ["cd assets && pnpm --frozen-lockfile recursive install"],
     "scripts": {
-      "test": [
-        "BASIC_AUTH_USERNAME=specialUserName BASIC_AUTH_PASSWORD=superSecretPassword mix test"
-      ],
-      "setup-db": [
-        "devbox services up -b",
-        "psql -U postgres -c \"CREATE USER postgres;\" || true",
-        "psql -U postgres -c \"CREATE DATABASE lunchbox_api_dev OWNER postgres;\" || true",
-        "psql -U postgres -c \"CREATE DATABASE lunchbox_api_test OWNER postgres;\" || true",
+      "test": ["BASIC_AUTH_USERNAME=specialUserName BASIC_AUTH_PASSWORD=superSecretPassword mix test"],
+      "init-db": [
+        "export PGDATA=$PWD/.devbox/virtenv/postgresql/data",
+        "rm -rf $PWD/.devbox/virtenv/postgresql",
+        "mkdir -p $PGDATA",
+        "initdb --username=postgres -D $PGDATA"
       ]
     }
   }
 }
 ```
+
+</div>
 ---
 
-## Summary
+## Key Outcomes & Takeaways
 
-* Integration delays ripple across teams.
-* Hours lost to “works on my machine” issues.
-* AI tools become unreliable without local verification.
-* Blocked productivity: both human and AI.
-* AI-generated code is only as good as your ability to test it locally.
-* Without a clean, reproducible environment, you can’t trust AI suggestions.
-* **Example:** Cursor and similar tools need fast feedback loops.
+<div class="mb-8"></div>
+
+<div v-click="1">
+The Problem
+</div>
+
+<div v-click="2">
+
+* Integration delays ripple across teams, creating massive obstacles in multi-team setups
+
+</div>
+
+<div v-click="3">
+
+* Hours lost to "works on my machine" issues that block entire development workflows
+
+</div>
+
+<div v-click="4">
+
+* AI tools become unreliable without proper local verification capabilities
+
+</div>
+
+<div v-click="5">
+
+* Blocked productivity affects both human developers and AI-assisted development
+
+</div>
+
+<div v-click="6">
+
+* AI-generated code is only as valuable as your ability to test it locally
+
+</div>
+
+<div v-click="7">
+
+* Without a clean, reproducible environment, you can't trust AI suggestions
+
+</div>
+
+---
+layout: center
+class: text-left
+---
+
+<div class="flex flex-col justify-center items-center h-full">
+
+<div class="text-center mb-8">
+
+## Outcome
+
+</div>
+
+<div class="max-w-4xl text-left">
+
+* **Recognize the true cost** of broken local environments - it's expensive and blocks both human and AI productivity
+* **Master your local development environment** - service dependencies, & runtime for instant code verification
+* **Unlock AI tool potential** - use tools like Cursor productively with reliable local verification to validate generated code
+* **Build improvement roadmaps** - guide your teams toward better integration practices and effective AI adoption
+
+</div>
+
+</div>
+
+---
+layout: center
+class: text-left
+---
+
+<div class="flex flex-col justify-center items-center h-full">
+
+<div class="text-center mb-8">
+
+## The Bottom Line
+
+</div>
+
+<div class="max-w-4xl text-left">
+
+* AI-generated code is only as valuable as your ability to test it locally
+* Without a clean, reproducible environment, you can't trust AI suggestions
+* Fast feedback loops are essential for both human and AI-assisted development success
+
+</div>
+
+</div>
 
 ---
 layout: center
@@ -258,7 +351,7 @@ class: text-center
 ---
 
 # Learn More
-
-[Documentation](https://sli.dev) · [GitHub](https://github.com/slidevjs/slidev) · [Showcases](https://sli.dev/resources/showcases)
+[Lunchbox API Demo Code](https://github.com/yeongsheng-tan/lunchbox_api) · 
+[Nix](https://nixos.org) · [Jetify Devbox](https://www.jetify.com/devbox)
 
 <PoweredBySlidev mt-10 />
