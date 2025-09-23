@@ -2,87 +2,87 @@
   "lockfile_version": "1",
   "packages": {
     "github:NixOS/nixpkgs/nixpkgs-unstable": {
-      "last_modified": "2025-08-04T03:33:26Z",
-      "resolved": "github:NixOS/nixpkgs/6a489c9482ca676ce23c0bcd7f2e1795383325fa?lastModified=1754278406"
+      "last_modified": "2025-09-21T09:21:16Z",
+      "resolved": "github:NixOS/nixpkgs/a1f79a1770d05af18111fbbe2a3ab2c42c0f6cd0?lastModified=1758446476"
     },
-    "nodejs@22.14.0": {
-      "last_modified": "2025-05-31T03:30:20Z",
+    "nodejs@24.5.0": {
+      "last_modified": "2025-08-11T07:05:29Z",
       "plugin_version": "0.0.2",
-      "resolved": "github:NixOS/nixpkgs/59138c7667b7970d205d6a05a8bfa2d78caa3643#nodejs_22",
+      "resolved": "github:NixOS/nixpkgs/9585e9192aadc13ec3e49f33f8333bd3cda524df#nodejs_24",
       "source": "devbox-search",
-      "version": "22.14.0",
+      "version": "24.5.0",
       "systems": {
         "aarch64-darwin": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/g5bv4gi6p7ryhs2hbaryxs6ivsxa6lqc-nodejs-22.14.0",
+              "path": "/nix/store/b1j05q96hwagn787p2jlgqcjg2nf5x49-nodejs-24.5.0",
               "default": true
             },
             {
               "name": "dev",
-              "path": "/nix/store/96vpirdcns8zxdwzwl7n804012lwrf1n-nodejs-22.14.0-dev"
+              "path": "/nix/store/j6ayg4xpqy9xdxgrhpqylzq8v7v07c6r-nodejs-24.5.0-dev"
             },
             {
               "name": "libv8",
-              "path": "/nix/store/xph2837xqjnra80mqlk64xp7vb3kkqxs-nodejs-22.14.0-libv8"
+              "path": "/nix/store/3ys6v5s5gvd9snwnl4saynl6av7mz3vy-nodejs-24.5.0-libv8"
             }
           ],
-          "store_path": "/nix/store/g5bv4gi6p7ryhs2hbaryxs6ivsxa6lqc-nodejs-22.14.0"
+          "store_path": "/nix/store/b1j05q96hwagn787p2jlgqcjg2nf5x49-nodejs-24.5.0"
         },
         "aarch64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/cwb781xbp70f72njqh8vhvbsf1xq87i5-nodejs-22.14.0",
+              "path": "/nix/store/1kn0vh4gf3a22arldrw694apq3fhgp15-nodejs-24.5.0",
               "default": true
             },
             {
               "name": "dev",
-              "path": "/nix/store/0w5mql46am2qai707a42q983l44l1h9z-nodejs-22.14.0-dev"
+              "path": "/nix/store/i3lqaj3j6znhnzh8ayka6q85r81ppxnw-nodejs-24.5.0-dev"
             },
             {
               "name": "libv8",
-              "path": "/nix/store/vy56lahz381ayvw3hym3wj4r4ggv7gbk-nodejs-22.14.0-libv8"
+              "path": "/nix/store/jjw6xgmg6qynp336g9igqnzlfbhzxr2i-nodejs-24.5.0-libv8"
             }
           ],
-          "store_path": "/nix/store/cwb781xbp70f72njqh8vhvbsf1xq87i5-nodejs-22.14.0"
+          "store_path": "/nix/store/1kn0vh4gf3a22arldrw694apq3fhgp15-nodejs-24.5.0"
         },
         "x86_64-darwin": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/086zjv14ipka2vbpgwil3xyvi5ml4vh3-nodejs-22.14.0",
+              "path": "/nix/store/sbcg21wp4bdzyh2542v77sp535kvfbfq-nodejs-24.5.0",
               "default": true
             },
             {
-              "name": "dev",
-              "path": "/nix/store/24n01nfvy908pwzwpgsl0k4227187i7i-nodejs-22.14.0-dev"
+              "name": "libv8",
+              "path": "/nix/store/75b7iix0pbmxmfnmv90l3q0ll1gc75az-nodejs-24.5.0-libv8"
             },
             {
-              "name": "libv8",
-              "path": "/nix/store/jiwk0in1wk85crn9vp03gg937gbh1s0w-nodejs-22.14.0-libv8"
+              "name": "dev",
+              "path": "/nix/store/fg7pi9s6m0spci1pfqbny0kxmk832i3r-nodejs-24.5.0-dev"
             }
           ],
-          "store_path": "/nix/store/086zjv14ipka2vbpgwil3xyvi5ml4vh3-nodejs-22.14.0"
+          "store_path": "/nix/store/sbcg21wp4bdzyh2542v77sp535kvfbfq-nodejs-24.5.0"
         },
         "x86_64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/c8jxsih8yy2rnncdmx2hyraizf689nvp-nodejs-22.14.0",
+              "path": "/nix/store/357id3rjy9417k4dkvxxmpgd9bxrwc7l-nodejs-24.5.0",
               "default": true
             },
             {
-              "name": "libv8",
-              "path": "/nix/store/s8gnrgh9hgnbkrc1wrn21d6zvkbvm9vi-nodejs-22.14.0-libv8"
+              "name": "dev",
+              "path": "/nix/store/0drh8jjq84sji6889l2k3ysmvy7sc9sg-nodejs-24.5.0-dev"
             },
             {
-              "name": "dev",
-              "path": "/nix/store/xw8c1c0inxq3xl1d7axz19vq8c05kjk5-nodejs-22.14.0-dev"
+              "name": "libv8",
+              "path": "/nix/store/kdlv4q7sgap0z43cylklhxz1g1q7751b-nodejs-24.5.0-libv8"
             }
           ],
-          "store_path": "/nix/store/c8jxsih8yy2rnncdmx2hyraizf689nvp-nodejs-22.14.0"
+          "store_path": "/nix/store/357id3rjy9417k4dkvxxmpgd9bxrwc7l-nodejs-24.5.0"
         }
       }
     }
