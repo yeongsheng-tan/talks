@@ -9,7 +9,7 @@ export SOURCE_REPO_NAME=${PWD##*/}
 echo "###################################################################################################################"
 echo "                                                                                  "
 echo "##   !! $SOURCE_REPO_NAME DEVELOPMENT ENVIRONMENT ;) !!"
-echo "##   DevBox VERSION: `devbox version`                 "
+echo "##   devbox VERSION: `devbox version`                 "
 echo "##   NODE_PATH: $NODE_PATH                            "
 echo "##   NODE VERSION: `node --version`                   "
 echo "                                                                                  "
