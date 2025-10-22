@@ -4,7 +4,7 @@
   "private": true,
   "engines": {
     "node": ">=24",
-    "pnpm": ">=10.17.1"
+    "pnpm": ">=10.19.0"
   },
   "scripts": {
     "preinstall": "npx only-allow pnpm",
@@ -14,13 +14,13 @@
     "export": "slidev export"
   },
   "dependencies": {
-    "@slidev/cli": "^52.2.5",
+    "@slidev/cli": "^52.5.0",
     "@slidev/theme-default": "latest",
     "@slidev/theme-seriph": "latest",
     "vue": "^3.5.22"
   },
   "devDependencies": {
-    "playwright-chromium": "^1.56.0",
+    "playwright-chromium": "^1.56.1",
     "syncpack": "^13.0.4"
   }
 }
