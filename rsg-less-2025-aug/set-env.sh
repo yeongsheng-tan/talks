@@ -16,7 +16,7 @@ echo "                                                                          
 echo "###################################################################################################################"
 
 echo "Setting up PNPM..."
-corepack prepare pnpm@10.26.0 --activate
-corepack use pnpm@10.26.0
+corepack prepare pnpm@10.26.1 --activate
+corepack use pnpm@10.26.1
 pnpm --frozen-lockfile recursive install
 
