@@ -4,11 +4,11 @@
   "private": true,
   "engines": {
     "node": ">=24",
-    "pnpm": ">=10.28.0"
+    "pnpm": ">=10.30.0"
   },
   "scripts": {
     "preinstall": "npx only-allow pnpm",
-    "postinstall": "syncpack fix-mismatches",
+    "postinstall": "syncpack fix",
     "build": "slidev build",
     "dev": "slidev --open",
     "export": "slidev export"
@@ -21,6 +21,6 @@
   "devDependencies": {
     "@slidev/cli": "^52.12.0",
     "playwright-chromium": "^1.58.2",
-    "syncpack": "^13.0.4"
+    "syncpack": "^14.0.0"
   }
 }
