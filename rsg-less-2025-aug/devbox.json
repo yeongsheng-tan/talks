@@ -1,6 +1,11 @@
 {
-  "$schema":  "https://raw.githubusercontent.com/jetify-com/devbox/0.17.0/.schema/devbox.schema.json",
-  "packages": ["nodejs-slim@24.13.0", "pnpm@latest"],
+  "$schema": "https://raw.githubusercontent.com/jetify-com/devbox/0.17.0/.schema/devbox.schema.json",
+  "packages": [
+    "nodejs@25.9.0"
+  ],
+  "env": {
+    "DEVBOX_COREPACK_ENABLED": "1"
+  },
   "shell": {
     "init_hook": [
       "echo 'Welcome to devbox for rsg-less-2025-aug!' > /dev/null",
