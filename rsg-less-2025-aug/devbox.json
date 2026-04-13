@@ -1,7 +1,8 @@
 {
   "$schema": "https://raw.githubusercontent.com/jetify-com/devbox/0.17.0/.schema/devbox.schema.json",
   "packages": [
-    "nodejs@25.9.0"
+    "nodejs@25.9.0",
+    "pnpm@10"
   ],
   "env": {
     "DEVBOX_COREPACK_ENABLED": "1"
