@@ -1,14 +1,62 @@
 {
   "lockfile_version": "1",
   "packages": {
-    "github:NixOS/nixpkgs/nixpkgs-unstable": {
-      "last_modified": "2026-04-11T06:17:25Z",
-      "resolved": "github:NixOS/nixpkgs/13043924aaa7375ce482ebe2494338e058282925?lastModified=1775888245"
+    "corepack@latest": {
+      "last_modified": "2026-03-21T07:29:51Z",
+      "resolved": "github:NixOS/nixpkgs/09061f748ee21f68a089cd5d91ec1859cd93d0be#corepack",
+      "source": "devbox-search",
+      "version": "0.34.6",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/b81ff3525q050yr2n31raaij9l86a70z-corepack-0.34.6",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/b81ff3525q050yr2n31raaij9l86a70z-corepack-0.34.6"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/krd99cx9wh0pflf43ghi8yy5bzaqrks6-corepack-0.34.6",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/krd99cx9wh0pflf43ghi8yy5bzaqrks6-corepack-0.34.6"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/p056js9jzlnq07gpl728fkvw036qdmlz-corepack-0.34.6",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/p056js9jzlnq07gpl728fkvw036qdmlz-corepack-0.34.6"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/pvgjai36liywyb5gyxnxnx5s2fsf7cwz-corepack-0.34.6",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/pvgjai36liywyb5gyxnxnx5s2fsf7cwz-corepack-0.34.6"
+        }
+      }
     },
-    "nodejs@25.9.0": {
-      "last_modified": "2026-04-01T17:36:14Z",
+    "github:NixOS/nixpkgs/nixpkgs-unstable": {
+      "last_modified": "2026-04-23T13:07:47Z",
+      "resolved": "github:NixOS/nixpkgs/01fbdeef22b76df85ea168fbfe1bfd9e63681b30?lastModified=1776949667"
+    },
+    "nodejs@25": {
+      "last_modified": "2026-04-16T08:46:55Z",
       "plugin_version": "0.0.2",
-      "resolved": "github:NixOS/nixpkgs/6ebfbc38bdc6b22822a6f991f2d922306f33cfbc#nodejs_25",
+      "resolved": "github:NixOS/nixpkgs/b86751bc4085f48661017fa226dee99fab6c651b#nodejs_25",
       "source": "devbox-search",
       "version": "25.9.0",
       "systems": {
@@ -51,54 +99,6 @@
             }
           ],
           "store_path": "/nix/store/dqxjqyvh6w8kh3azd4zr7k4dfw8b7lxp-nodejs-25.9.0"
-        }
-      }
-    },
-    "pnpm@10": {
-      "last_modified": "2026-03-27T11:17:38Z",
-      "resolved": "github:NixOS/nixpkgs/832efc09b4caf6b4569fbf9dc01bec3082a00611#pnpm",
-      "source": "devbox-search",
-      "version": "10.33.0",
-      "systems": {
-        "aarch64-darwin": {
-          "outputs": [
-            {
-              "name": "out",
-              "path": "/nix/store/ikniys3wki91s94zh7wpnf9rf8806msv-pnpm-10.33.0",
-              "default": true
-            }
-          ],
-          "store_path": "/nix/store/ikniys3wki91s94zh7wpnf9rf8806msv-pnpm-10.33.0"
-        },
-        "aarch64-linux": {
-          "outputs": [
-            {
-              "name": "out",
-              "path": "/nix/store/5gj7nis9afj3qib78y8vwp5vh5rdr5wn-pnpm-10.33.0",
-              "default": true
-            }
-          ],
-          "store_path": "/nix/store/5gj7nis9afj3qib78y8vwp5vh5rdr5wn-pnpm-10.33.0"
-        },
-        "x86_64-darwin": {
-          "outputs": [
-            {
-              "name": "out",
-              "path": "/nix/store/a8425q8kcj0r6x13c50z52y9f23b43kh-pnpm-10.33.0",
-              "default": true
-            }
-          ],
-          "store_path": "/nix/store/a8425q8kcj0r6x13c50z52y9f23b43kh-pnpm-10.33.0"
-        },
-        "x86_64-linux": {
-          "outputs": [
-            {
-              "name": "out",
-              "path": "/nix/store/qlbqwsia8a9rk3cp6v58y1x58c0j2wyk-pnpm-10.33.0",
-              "default": true
-            }
-          ],
-          "store_path": "/nix/store/qlbqwsia8a9rk3cp6v58y1x58c0j2wyk-pnpm-10.33.0"
         }
       }
     }
