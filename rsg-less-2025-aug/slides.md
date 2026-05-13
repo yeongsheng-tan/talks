@@ -179,13 +179,13 @@ layout: center
   <!-- Top half with the AI IDE run test failure image -->
   <div style="height: 50vh; width: 100vw; display: flex; align-items: center; justify-content: center; background: #f5f5f5; overflow: visible;">
     <!-- Contrast AI IDE failure to run tests-->
-    <img src="/images/ai_ide_failure.png" alt="IDE failure" style="width: auto; height: auto; max-width: 100%; max-height: 100%; object-fit: contain; display: block;">
+    <img :src="'/images/ai_ide_failure.png'" alt="IDE failure" style="width: auto; height: auto; max-width: 100%; max-height: 100%; object-fit: contain; display: block;">
   </div>
 
   <!-- Bottom half with the AI IDE run test success image -->
   <div style="height: 50vh; width: 100vw; display: flex; align-items: center; justify-content: center; background: #f5f5f5; overflow: visible;">
     <!-- AI IDE success to run tests-->
-    <img src="/images/ai_ide_succeed.png" alt="IDE success" style="width: auto; height: auto; max-width: 100%; max-height: 100%; object-fit: contain; display: block;">
+    <img :src="'/images/ai_ide_succeed.png'" alt="IDE success" style="width: auto; height: auto; max-width: 100%; max-height: 100%; object-fit: contain; display: block;">
   </div>
 </div>
 
@@ -205,7 +205,7 @@ layout: full
 ---
   <div class="flex items-center gap-6 mb-6">
     <h3>{ DEMO }</h3>
-    <img src="/images/devbox_stack.png" alt="Devbox Stack" class="h-32 w-auto">
+    <img :src="'/images/devbox_stack.png'" alt="Devbox Stack" class="h-32 w-auto">
   </div>
 
   <!-- Nix Flakes with Jetfy Devbox & direnv-->
