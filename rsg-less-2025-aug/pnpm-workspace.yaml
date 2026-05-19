@@ -1,3 +1,13 @@
 allowBuilds:
   esbuild: true
   playwright-chromium: true
+minimumReleaseAgeExclude:
+  - syncpack-darwin-arm64@15.3.0
+  - syncpack-darwin-x64@15.3.0
+  - syncpack-linux-arm64-musl@15.3.0
+  - syncpack-linux-arm64@15.3.0
+  - syncpack-linux-x64-musl@15.3.0
+  - syncpack-linux-x64@15.3.0
+  - syncpack-windows-arm64@15.3.0
+  - syncpack-windows-x64@15.3.0
+  - syncpack@15.3.0
