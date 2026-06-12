@@ -38,3 +38,4 @@ minimumReleaseAgeExclude:
   - '@slidev/parser@52.16.0'
   - '@slidev/types@52.16.0'
   - shiki@4.2.0
+  - '@vue/shared@3.5.36'

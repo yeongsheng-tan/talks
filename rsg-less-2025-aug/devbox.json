@@ -1,11 +1,11 @@
 {
-  "$schema": "https://raw.githubusercontent.com/jetify-com/devbox/0.17.2/.schema/devbox.schema.json",
-  "packages": [
-    "corepack@latest",
-    "nodejs@26"
-  ],
-  "env": {
-    "DEVBOX_COREPACK_ENABLED": "1"
+  "$schema": "https://raw.githubusercontent.com/jetify-com/devbox/0.17.3/.schema/devbox.schema.json",
+  "packages": {
+    "corepack": "latest",
+    "nodejs": {
+      "version": "26",
+      "disable_plugin": true
+    }
   },
   "shell": {
     "init_hook": [
