@@ -2,8 +2,8 @@
   "lockfile_version": "1",
   "packages": {
     "corepack@latest": {
-      "last_modified": "2026-05-21T08:15:18Z",
-      "resolved": "github:NixOS/nixpkgs/4a29d733e8a7d5b824c3d8c958a946a9867b3eb2#corepack",
+      "last_modified": "2026-06-27T07:37:20Z",
+      "resolved": "github:NixOS/nixpkgs/3d46470bb3030020f7e1361f33514854f5bfa86d#corepack",
       "source": "devbox-search",
       "version": "0.35.0",
       "systems": {
@@ -11,93 +11,93 @@
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/l3awryym5fh66w3ilk9f1gcxkq06fi2r-corepack-0.35.0",
+              "path": "/nix/store/ds6zj7rzxcpz7m13y73zdgn3bxwbfrmx-corepack-0.35.0",
               "default": true
             }
           ],
-          "store_path": "/nix/store/l3awryym5fh66w3ilk9f1gcxkq06fi2r-corepack-0.35.0"
+          "store_path": "/nix/store/ds6zj7rzxcpz7m13y73zdgn3bxwbfrmx-corepack-0.35.0"
         },
         "aarch64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/mnqyciqkz9fnmsy6i6w7d7hlc8arq819-corepack-0.35.0",
+              "path": "/nix/store/6p5pk8fwb7fwv22v4ijiwz9k4vwxv5kx-corepack-0.35.0",
               "default": true
             }
           ],
-          "store_path": "/nix/store/mnqyciqkz9fnmsy6i6w7d7hlc8arq819-corepack-0.35.0"
+          "store_path": "/nix/store/6p5pk8fwb7fwv22v4ijiwz9k4vwxv5kx-corepack-0.35.0"
         },
         "x86_64-darwin": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/yzwg1favqdxjgj20jax6isk3m87kbyba-corepack-0.35.0",
+              "path": "/nix/store/cshgr9ifca67ynk1asgsjxa2wj3xysr2-corepack-0.35.0",
               "default": true
             }
           ],
-          "store_path": "/nix/store/yzwg1favqdxjgj20jax6isk3m87kbyba-corepack-0.35.0"
+          "store_path": "/nix/store/cshgr9ifca67ynk1asgsjxa2wj3xysr2-corepack-0.35.0"
         },
         "x86_64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/pjqdmkidmqzbpi34xbs0wnl20ra5h9y0-corepack-0.35.0",
+              "path": "/nix/store/rh1nfxngp29c6cq8wn9iqhp20fpd9gdk-corepack-0.35.0",
               "default": true
             }
           ],
-          "store_path": "/nix/store/pjqdmkidmqzbpi34xbs0wnl20ra5h9y0-corepack-0.35.0"
+          "store_path": "/nix/store/rh1nfxngp29c6cq8wn9iqhp20fpd9gdk-corepack-0.35.0"
         }
       }
     },
     "github:NixOS/nixpkgs/nixpkgs-unstable": {
-      "last_modified": "2026-06-28T08:48:41Z",
-      "resolved": "github:NixOS/nixpkgs/e1c1b84752fb0897897380a3cae9dc7fcab91ca3?lastModified=1782636521"
+      "last_modified": "2026-07-01T06:48:47Z",
+      "resolved": "github:NixOS/nixpkgs/f76e4c7b1840704deda511ab34f37b829f6b5636?lastModified=1782888527"
     },
     "nodejs@26": {
-      "last_modified": "2026-06-22T09:00:13Z",
-      "resolved": "github:NixOS/nixpkgs/b3c092d3c36d91e2f61f3dfb39a159f180a56659#nodejs_26",
+      "last_modified": "2026-06-27T07:37:20Z",
+      "resolved": "github:NixOS/nixpkgs/3d46470bb3030020f7e1361f33514854f5bfa86d#nodejs_26",
       "source": "devbox-search",
-      "version": "26.3.1",
+      "version": "26.4.0",
       "systems": {
         "aarch64-darwin": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/4vsghy73m3avl125hgcfi47zl30bgckk-nodejs-26.3.1",
+              "path": "/nix/store/dz3nxng3029j1gc570pkwj8ahfdl3sa4-nodejs-26.4.0",
               "default": true
             }
           ],
-          "store_path": "/nix/store/4vsghy73m3avl125hgcfi47zl30bgckk-nodejs-26.3.1"
+          "store_path": "/nix/store/dz3nxng3029j1gc570pkwj8ahfdl3sa4-nodejs-26.4.0"
         },
         "aarch64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/hai9lafg40lrnnj4n7ma00lw2lln9272-nodejs-26.3.1",
+              "path": "/nix/store/4bv9k994r33svxczpy2wk3lhsrh3kspl-nodejs-26.4.0",
               "default": true
             }
           ],
-          "store_path": "/nix/store/hai9lafg40lrnnj4n7ma00lw2lln9272-nodejs-26.3.1"
+          "store_path": "/nix/store/4bv9k994r33svxczpy2wk3lhsrh3kspl-nodejs-26.4.0"
         },
         "x86_64-darwin": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/d2psl5gpk7jqqc12zv4i75sspkpkggpm-nodejs-26.3.1",
+              "path": "/nix/store/wyxj7d54jggi26lnap66c858mb2l2m2q-nodejs-26.4.0",
               "default": true
             }
           ],
-          "store_path": "/nix/store/d2psl5gpk7jqqc12zv4i75sspkpkggpm-nodejs-26.3.1"
+          "store_path": "/nix/store/wyxj7d54jggi26lnap66c858mb2l2m2q-nodejs-26.4.0"
         },
         "x86_64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/q8zsbl8xg2dhg0y8gc22zgblkyhxxgp3-nodejs-26.3.1",
+              "path": "/nix/store/i2jf2l5lqhy3d7zy3lzx5wjydyzw2hwm-nodejs-26.4.0",
               "default": true
             }
           ],
-          "store_path": "/nix/store/q8zsbl8xg2dhg0y8gc22zgblkyhxxgp3-nodejs-26.3.1"
+          "store_path": "/nix/store/i2jf2l5lqhy3d7zy3lzx5wjydyzw2hwm-nodejs-26.4.0"
         }
       }
     }
