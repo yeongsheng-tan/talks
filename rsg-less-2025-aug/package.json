@@ -4,9 +4,9 @@
   "private": true,
   "engines": {
     "node": ">=26 <27",
-    "pnpm": ">=11.18.0"
+    "pnpm": ">=11.20.0"
   },
-  "packageManager": "pnpm@11.18.0",
+  "packageManager": "pnpm@11.20.0",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "postinstall": "syncpack fix",
@@ -17,7 +17,7 @@
   "dependencies": {
     "@slidev/theme-default": "latest",
     "@slidev/theme-seriph": "latest",
-    "vue": "^3.5.40"
+    "vue": "^3.5.41"
   },
   "devDependencies": {
     "@slidev/cli": "^52.19.0",
