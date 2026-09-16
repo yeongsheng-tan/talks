@@ -1,10 +1,9 @@
 {
-  "$schema": "https://raw.githubusercontent.com/jetify-com/devbox/0.18.0/.schema/devbox.schema.json",
+  "$schema": "https://raw.githubusercontent.com/jetify-com/devbox/0.18.2/.schema/devbox.schema.json",
   "packages": {
     "corepack": "latest",
     "nodejs": {
-      "version": "26",
-      "disable_plugin": true
+      "version": "26"
     }
   },
   "shell": {
