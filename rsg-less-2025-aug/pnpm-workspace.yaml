@@ -9,3 +9,6 @@ minimumReleaseAgeExclude:
 permissions:
   '@slidev/cli':
     skills: true
+skills:
+  dirs:
+    - .claude/skills
