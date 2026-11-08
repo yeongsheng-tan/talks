@@ -4,9 +4,9 @@
   "private": true,
   "engines": {
     "node": ">=26 <27",
-    "pnpm": ">=12.17.0"
+    "pnpm": ">=12.18.0"
   },
-  "packageManager": "pnpm@12.17.0",
+  "packageManager": "pnpm@12.18.0",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "postinstall": "syncpack fix",
@@ -17,11 +17,11 @@
   "dependencies": {
     "@slidev/theme-default": "latest",
     "@slidev/theme-seriph": "latest",
-    "vue": "^3.5.44"
+    "vue": "^3.5.45"
   },
   "devDependencies": {
-    "@slidev/cli": "^53.0.0",
-    "playwright-chromium": "^1.64.1",
+    "@slidev/cli": "^53.1.0",
+    "playwright-chromium": "^1.65.0",
     "syncpack": "^15.3.3"
   }
 }
