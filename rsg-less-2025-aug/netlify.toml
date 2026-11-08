@@ -1,9 +1,9 @@
 [build]
 publish = "dist"
-command = "npm run build"
+command = "pnpm run build"
 
 [build.environment]
-NODE_VERSION = "24"
+NODE_VERSION = "26"
 
 [[redirects]]
 from = "/.well-known/*"
