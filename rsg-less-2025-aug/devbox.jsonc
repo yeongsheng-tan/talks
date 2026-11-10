@@ -6,9 +6,12 @@
       "version": "26"
     }
   },
+  "env": {
+    "DEVBOX_COREPACK_ENABLED": "true",
+    "COREPACK_ENABLE_DOWNLOAD_PROMPT": "0"
+  },
   "shell": {
     "init_hook": [
-      "echo 'Welcome to devbox for rsg-less-2025-aug!' > /dev/null",
       ". ./set-env.sh"
     ],
     "scripts": {
