@@ -21,7 +21,7 @@
   },
   "devDependencies": {
     "@slidev/cli": "^53.1.0",
-    "playwright-chromium": "^1.65.0",
+    "playwright-chromium": "^1.65.1",
     "syncpack": "^15.3.3"
   }
 }
